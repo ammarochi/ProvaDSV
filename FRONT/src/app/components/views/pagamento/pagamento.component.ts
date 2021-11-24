@@ -29,6 +29,7 @@ export class PagamentoComponent implements OnInit {
         let pagamento: Pagamento = {
             Cliente: this.Cliente,
             Formaid: this.Formaid,
+
         };
         this.pagamentoService.create(pagamento).subscribe((pagamento) => {
             console.log(pagamento);
