@@ -16,6 +16,6 @@ namespace API.Models
         public int CategoriaId { get; set; }
 
         public override string ToString() =>
-            $"Nome: {Nome} | Preço: {Preco.ToString("C2")} | Criado em: {CriadoEm}";
+            $"Nome: {Nome} |  Preço: {Preco.ToString("C2")} | Criado em: {CriadoEm}";
     }
 }
