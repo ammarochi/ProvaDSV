@@ -31,6 +31,13 @@ namespace API.Controllers
                     new Produto { ProdutoId = 3, Nome = "Pera", Preco = 2.00, Quantidade = 9, CategoriaId = 1 },
                 }
             );
+            _context.AddRange(new Pagamento[]
+                {
+                    new Pagamento { Id = 1, FormaPagamento = "Crédito"},
+                    new Pagamento { Id = 2, Nome = "PIX"},
+                }
+            ); 
+            
             _context.SaveChanges();
             return Ok(new { message = "Dados inicializados com sucesso!" });
         }
